@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONY & STACY WEDDING</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-danger d-flex justify-content-around">
+        <h4 class="text-center m-0">
+            <a class="text-warning text-decoration-none" href="./img/positive.jpg" data-fancybox data-caption="潮州聞香閣 星辰廳">
+                潮州聞香閣 星辰廳
+            </a>
+        </h4>
+        <h4 class="text-center m-0">
+            <a class="text-light text-decoration-none" href="./project.html">
+                上午儀式流程
+            </a>
+        </h4>
+    </div>
+    <input class="form-control w-100" type="text" list="datalist_kind" id="kind" value="全部" onfocus="this.value=''" placeholder="選擇或輸入親友桌" />
+    <datalist id="datalist_kind">
+        <option value="全部">全部</option>
+        <option value="主桌">主桌</option>
+        <option value="新娘好友">新娘好友</option>
+        <option value="女方親友">女方親友</option>
+        <option value="新郞朋友">新郞朋友</option>
+        <option value="新郞大學同學">新郞大學同學</option>
+        <option value="男方智匯公司">男方智匯公司</option>
+        <option value="男方台中同事">男方台中同事</option>
+        <option value="男方親戚">男方親戚</option>
+        <option value="男方彌陀親戚">男方彌陀親戚</option>
+        <option value="竹田親戚">竹田親戚</option>
+        <option value="于庭朋友">于庭朋友</option>
+        <option value="良倉同學">良倉同學</option>
+        <option value="潮州分局">潮州分局</option>
+        <option value="男方芳鄰">男方芳鄰</option>
+        <option value="良倉的好友">良倉的好友</option>
+        <option value="潮州兄弟會">潮州兄弟會</option>
+        <option value="兄弟會">兄弟會</option>
+        <option value="鴻運寶座大樓">鴻運寶座大樓</option>
+        <option value="男方親戚(素食)">男方親戚(素食)</option>
+    </datalist>
+
+    <!-- <select id="kind" class="form-control">
+        <option value="全部">全部</option>
+        <option value="主桌">主桌</option>
+        <option value="新娘好友">新娘好友</option>
+        <option value="女方親友">女方親友</option>
+        <option value="新郞朋友">新郞朋友</option>
+        <option value="新郞大學同學">新郞大學同學</option>
+        <option value="男方智匯公司">男方智匯公司</option>
+        <option value="男方台中同事">男方台中同事</option>
+        <option value="男方親戚">男方親戚</option>
+        <option value="男方彌陀親戚">男方彌陀親戚</option>
+        <option value="竹田親戚">竹田親戚</option>
+        <option value="于庭朋友">于庭朋友</option>
+        <option value="良倉同學">良倉同學</option>
+        <option value="潮州分局">潮州分局</option>
+        <option value="男方芳鄰">男方芳鄰</option>
+        <option value="良倉的好友">良倉的好友</option>
+        <option value="潮州兄弟會">潮州兄弟會</option>
+        <option value="兄弟會">兄弟會</option>
+        <option value="鴻運寶座大樓">鴻運寶座大樓</option>
+        <option value="男方親戚(素食)">男方親戚(素食)</option>
+    </select> -->
+
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">桌序圖</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <table class="mw-100 dining_table table table-bordered">
+                    <tr class="row_00">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><h4 class="bg-danger text-light text-center">舞台</h4></td>
+                        <td></td>
+                        <td></td>
+                        <td><h4 class="text-primary">門口</h4></td>
+                    </tr>
+                    <tr class="row_01">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_1"><p class="text-center">1<br>主桌</p></div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row_02">
+                        <td></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_20"><p class="text-center">20<br>女方親友</p></div></td>
+                        <td ></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_12"><p class="text-center">12<br>竹田親戚</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_11"><p class="text-center">11<br>男方彌陀親戚</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_2"><p class="text-center">2<br>潮州兄弟會</p></div></td>
+                    </tr>
+                    <tr class="row_03">
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_29"><p class="text-center">29<br>女方親友</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_21"><p class="text-center">21<br>女方親友</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_13"><p class="text-center">13<br>男方親戚</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_7"><p class="text-center">7<br>男方彌陀親戚</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_3"><p class="text-center">3<br>潮州兄弟會</p></div></td>
+                    </tr>
+                    <tr class="row_04">
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_36"><p class="text-center">36<br>素食桌</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_30"><p class="text-center">30<br>鴻運寶座大樓</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_22"><p class="text-center">22<br>女方親友</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_14"><p class="text-center">14<br>于庭朋友</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_8"><p class="text-center">8<br>良倉同學</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_4"><p class="text-center">4<br>潮州兄弟會/智匯公司</p></div></td>
+                    </tr>
+                    <tr class="row_05">
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_37"><p class="text-center">37<br>潮州分局</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_31"><p class="text-center">31<br>潮州分局</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_23"><p class="text-center">23<br>女方親友</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_15"><p class="text-center">15<br>于庭朋友</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_9"><p class="text-center">9<br>男方智匯公司</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_5"><p class="text-center">5<br>兄弟會</p></div></td>
+                    </tr>
+                    <tr class="row_06">
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_38"><p class="text-center">38<br>潮州分局</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_32"><p class="text-center">32<br>潮州分局</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_24"><p class="text-center">24<br>女方親友</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_16"><p class="text-center">16<br>男方台中同事</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_10"><p class="text-center">10<br>于庭朋友</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_6"><p class="text-center">6<br>兄弟會</p></div></td>
+                    </tr>
+                    <tr class="row_07">
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_33"><p class="text-center">33<br>潮州分局</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_34"><p class="text-center">34<br>良倉的好友</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_27"><p class="text-center">27<br>新娘好友</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_17"><p class="text-center">17<br>新郎好友</p></div></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row_08">
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_35"><p class="text-center">35<br>良倉的好友</p></div></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_28"><p class="text-center">28<br>新娘好友</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_18"><p class="text-center">18<br>新郞大學同學</p></div></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row_09">
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_26"><p class="text-center">26<br>男方芳鄰</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_25"><p class="text-center">25<br>男方芳鄰</p></div></td>
+                        <td></td>
+                        <td><div class="border border-dark rounded-circle m-auto d-flex align-items-center justify-content-center" id="no_19"><p class="text-center">19<br>新郞大學同學</p></div></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="w-100 btn btn-secondary" data-dismiss="modal">關閉</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--  -->
+
+    <table class="table table-bordered table-dark table-hover mw-100">
+        <thead>
+            <tr>
+                <th>桌號</th>
+                <th>座位名稱</th>
+                <th>座席人員</th>
+                <th>人數</th>
+            </tr>
+        </thead>
+        <tbody id="data_tbody"></tbody>
+    </table>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+<!--fancybox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="./js/data.js"></script>
+<script>
+    const tbody = document.querySelector('#data_tbody');
+    // console.log(data);
+    // console.log(data.length);
+
+    const kindSelect = document.querySelector('#kind');
+    kindSelect.addEventListener('change',(e)=>{
+        //初始表格
+        tbody.innerHTML = '';
+
+
+        console.log(kindSelect.value)
+        
+        switch(kindSelect.value){
+            case '全部':
+                allKind();
+            break;
+            case '主桌':
+                filterKind('主桌');
+            break;
+            case '新娘好友':
+                filterKind('新娘好友');
+            break;
+            case '女方親友':
+                filterKind('女方親友');
+            break;
+            case '新郞朋友':
+                filterKind('新郞朋友');
+            break;
+            case '新郞大學同學':
+                filterKind('新郞大學同學');
+            break;
+            case '男方智匯公司':
+                filterKind('男方智匯公司');
+            break;
+            case '男方台中同事':
+                filterKind('男方台中同事');
+            break;
+            case '男方親戚':
+                filterKind('男方親戚');
+            break;
+            case '男方彌陀親戚':
+                filterKind('男方彌陀親戚');
+            break;
+            case '竹田親戚':
+                filterKind('竹田親戚');
+            break;
+            case '于庭朋友':
+                filterKind('于庭朋友');
+            break;
+            case '良倉同學':
+                filterKind('良倉同學');
+            break;
+            case '潮州分局':
+                filterKind('潮州分局');
+            break;
+            case '男方芳鄰':
+                filterKind('男方芳鄰');
+            break;
+            case '良倉的好友':
+                filterKind('良倉的好友');
+            break;
+            case '潮州兄弟會':
+                filterKind('潮州兄弟會');
+            break;
+            case '兄弟會':
+                filterKind('兄弟會');
+            break;
+            case '鴻運寶座大樓':
+                filterKind('鴻運寶座大樓');
+            break;
+            case '男方親戚(素食)':
+                filterKind('男方親戚(素食)');
+            break;
+        }
+
+
+        
+    })
+
+    function filterKind(parm){
+         let f_data = [];
+        for(let k in data){    
+            //  console.log(data[k].kind.indexOf(parm) != -1)
+            if(data[k].kind.indexOf(parm) != -1){
+                f_data.push(data[k]);
+            }
+        }
+        console.log(f_data)
+
+        for(let i=0;i<f_data.length;i++){
+            let row = tbody.insertRow(-1);
+            row.setAttribute('data-table','no_'+f_data[i].no);
+            row.className = 'list_no'
+            row.setAttribute('data-toggle','modal');
+            row.setAttribute('data-target','#exampleModal');
+            
+            let newCell_01 = row.insertCell(0);
+            let newCell_02 = row.insertCell(1);
+            let newCell_03 = row.insertCell(2);
+            newCell_03.className = 'd-flex justify-content-start';
+            let newCell_04 = row.insertCell(3);
+
+            newCell_01.innerHTML = f_data[i].no;
+            newCell_02.innerHTML = f_data[i].kind;
+            newCell_04.innerHTML = f_data[i].person.length;
+
+
+            //座席人員
+            let temp_person = '';
+            for(let j=0;j<f_data[i].person.length;j++){
+                // console.log(f_data[i].person[j])
+                temp_person += '<span class="mx-0 mx-md-3">'+f_data[i].person[j]+'</span>';
+                // console.log(temp_person)
+            }
+            newCell_03.innerHTML = temp_person;
+        }
+
+        let list_no = document.querySelectorAll('.list_no');
+        // console.log(list_no);
+        list_no.forEach(element => {
+            
+            element.addEventListener('click',()=>{
+
+                let initSelectTable = document.querySelectorAll('.bg-warning');
+                // console.log(initSelectTable)
+                if(initSelectTable){
+                    initSelectTable.forEach(element => {
+                        // console.log(element)
+                        element.classList.remove('bg-warning');
+                        // element.classList.remove('text-danger');
+                    });
+                }
+                //取得data-*值
+                // console.log(element.dataset.table);
+                let tbid = element.dataset.table;
+                let selectTable = document.querySelector(`#${tbid}`);
+                selectTable.classList.add('bg-warning');
+                // selectTable.classList.add('text-danger');
+                // console.log(selectTable)
+            })
+        });
+    }
+
+    //網頁初始顯示
+    allKind();
+    function allKind(){
+        for(let i=0;i<data.length;i++){
+
+            let row = tbody.insertRow(-1);
+            row.setAttribute('data-table','no_'+data[i].no);
+            row.className = 'list_no'
+            row.setAttribute('data-toggle','modal');
+            row.setAttribute('data-target','#exampleModal');
+            let newCell_01 = row.insertCell(0);
+            let newCell_02 = row.insertCell(1);
+            let newCell_03 = row.insertCell(2);
+            newCell_03.className = 'd-flex justify-content-start';
+            let newCell_04 = row.insertCell(3);
+
+            newCell_01.innerHTML = data[i].no;
+            newCell_02.innerHTML = data[i].kind;
+            newCell_04.innerHTML = data[i].person.length;
+
+
+            //座席人員
+            let temp_person = '';
+            for(let j=0;j<data[i].person.length;j++){
+                // console.log(data[i].person[j])
+                temp_person += '<span class="mx-0 mx-md-3">'+data[i].person[j]+'</span>';
+                // console.log(temp_person)
+            }
+            newCell_03.innerHTML = temp_person;
+        }
+
+        let list_no = document.querySelectorAll('.list_no');
+        // console.log(list_no);
+        list_no.forEach(element => {
+            
+            element.addEventListener('click',()=>{
+
+                let initSelectTable = document.querySelectorAll('.bg-warning');
+                // console.log(initSelectTable)
+                if(initSelectTable){
+                    initSelectTable.forEach(element => {
+                        // console.log(element)
+                        element.classList.remove('bg-warning');
+                        // element.classList.remove('text-danger');
+                    });
+                }
+                //取得data-*值
+                // console.log(element.dataset.table);
+                let tbid = element.dataset.table;
+                let selectTable = document.querySelector(`#${tbid}`);
+                selectTable.classList.add('bg-warning');
+                // selectTable.classList.add('text-danger');
+                // console.log(selectTable)
+            })
+        });
+    }
+
+
+    
+    
+    
+</script>
+</html>

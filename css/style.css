@@ -1,0 +1,34 @@
+.dining_table .border{
+    height:5rem;
+    max-width:5rem;
+}
+.dining_table tr td{
+    width: 14.44%;
+}
+
+.dining_table td, .dining_table th{
+    padding: 1%!important;
+}
+
+.modal-dialog{
+    max-width: 1080px!important;
+}
+
+#data_tbody tr{
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:1200px){}
+@media screen and (max-width:992px){}
+@media screen and (max-width:768px){}
+@media screen and (max-width:576px){
+    .table td, .table th {
+        padding: 0rem!important;
+   }
+    table.dining_table{
+        font-size:.8rem!important;
+   }
+}
